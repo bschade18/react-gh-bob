@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e4780555a83231a36d5c8fcd724ea578",
+    "revision": "b66f22f06a66032f0f4b8bba556c3555",
     "url": "/react-gh-bob/index.html"
   },
   {
