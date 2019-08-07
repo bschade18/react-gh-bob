@@ -1,33 +1,163 @@
-.App {
-  text-align: center;
+#text {
+  font-size: 30px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 580px;
+  font-family: Bodoni;
+}
+.cool {
+  animation-name: fadeout;
+  animation-duration: 2s;
+}
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+#author {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-family: Bodoni;
+  font-size: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#quote-box {
+  background-color: #e6e6e6;
+  height: 320px;
+  width: 600px;
+  margin: auto;
+  position: relative;
+  top: 270px;
+  border-radius: 7px;
+  border: 1px solid black;
+  margin-bottom: 400px;
+}
+
+.fa-twitter {
+  background: #55acee;
   color: white;
+  height: 18%;
+  width: 13%;
 }
 
-.App-link {
-  color: #61dafb;
+.fa {
+  padding: 13px;
+  border-color: #55acee;
+  border-radius: 3px;
+  position: absolute;
+  left: 20px;
+  top: 250px;
+}
+.fa:hover {
+  color: yellow;
+  background-color: #75bbf0;
+  border-color: #75bbf0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#new-quote {
+  padding: 4px;
+  background: #55acee;
+  color: white;
+  border-color: #55acee;
+  border-radius: 3px;
+  position: absolute;
+  left: 455px;
+  right: 8px;
+  top: 250px;
+  height: 18%;
+  width: 21%;
+  font-family: Bodoni;
+}
+#new-quote:hover {
+  color: yellow;
+  background-color: #75bbf0;
+  border-color: #75bbf0;
+}
+#navbar a:hover {
+  color: black;
+}
+
+#wab {
+  display: none;
+}
+#navbar a {
+  color: gray;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  margin: auto;
+}
+#navbar {
+  text-align: center;
+  overflow: hidden;
+  font-family: Bodoni;
+  border-bottom: 1px solid black;
+}
+
+#summary-container {
+  display: flex;
+  justify-content: center;
+}
+
+#summary {
+  width: 70vw;
+  font-family: Bodoni;
+  font-size: 16px;
+  position: relative;
+  top: 15px;
+}
+
+#gma {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.castDescription,
+#cast-header,
+#quotes-header {
+  text-align: center;
+  font-family: Bodoni;
+  font-size: 20px;
+}
+#cast-header {
+  font-size: 30px;
+}
+#quotes-header {
+  position: relative;
+  top: 260px;
+  font-size: 30px;
+}
+#BobWileyImg,
+#DrMarvinImg,
+#FeyImg,
+#SiggyImg,
+#AnnaImg,
+#MrGutmanImg,
+#MrsGutmanImg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#movie-title {
+  display: inline;
+  font-style: italic;
+  font-weight: bold;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + #body {
+  padding-top: 60px;
 }
