@@ -48,11 +48,11 @@ class Quotes extends React.Component {
     document.getElementById("author").setAttribute("class", "cool");
     setTimeout(
       () => document.getElementById("text").removeAttribute("class", "cool"),
-      1000
+      2000
     );
     setTimeout(
       () => document.getElementById("author").removeAttribute("class", "cool"),
-      1000
+      2000
     );
   }
 
@@ -74,25 +74,8 @@ class Quotes extends React.Component {
       "Dr. Marvin, guess what? Ahoy, I sail, I'm a sailor, I sail! "
     ];
 
-    const quoteAuthors = [
-      "Dr. Leo Marvin",
-      "Bob Wiley",
-      "Dr. Leo Marvin",
-      "Bob Wiley",
-      "Bob Wiley",
-      "Bob Wiley",
-      "Bob Wiley",
-      "Bob Wiley",
-      "Marie",
-      "Dr. Leo Marvin",
-      "Dr. Leo Marvin",
-      "Fay Marvin",
-      "Bob Wiley"
-    ];
-
     const quote = quoteBank[this.state.randomIndex];
 
-    const author = quoteAuthors[this.state.randomIndex];
     document
       .getElementById("tweet-quote")
       .setAttribute("href", `https://twitter.com/intent/tweet?text=${quote}`);
@@ -152,6 +135,7 @@ class Quotes extends React.Component {
         <Navbar onScroll={this.handleScroll} />
         <img
           id="gma"
+          alt="Bob Wiley and Dr. Marvin sitting next to each other"
           src="https://musicart.xboxlive.com/6/cfbcf4ed-0000-0000-0000-000000000009/504/image.jpg?w=1920&h=1080"
         />
         <Summary />
@@ -170,6 +154,7 @@ class Quotes extends React.Component {
           <a
             class="twitter-share-button"
             target="_blank"
+            rel="noopener noreferrer"
             href="https://twitter.com/intent/tweet"
             id="tweet-quote"
             onClick={this.tweetQuote}
